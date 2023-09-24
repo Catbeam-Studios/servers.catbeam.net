@@ -1,73 +1,85 @@
 @font-face {
-    font-family: OliversBarney;
-    src: url(fnt/OliversBarney.tff);
+    font-family: "OliversBarney";
+    src: url("fnt/OliversBarney.ttf");
 }
 
-.sociallink {
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-    display: inline-block;
-    animation-name: hoveroff;
-    animation-duration: 0.25s;
+::selection {
+    background: rgba(128,0,255,0.5);
 }
-@keyframes hoveron {
-    0%  {width: 50px; height: 50px;}
-    100%    {width: 60px; height: 60px;}
+::-webkit-scrollbar {
+    width: 20px;
 }
-@keyframes hoveroff {
-    0%  {width: 60px; height: 60px;}
-    100%    {width: 50px; height: 50px;}
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
 }
-.sociallink:hover {
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
-    display: inline-block;
-    animation-name: hoveron;
-    animation-duration: 0.25s;
+::-webkit-scrollbar-thumb {
+    background: rgb(128,128,128);
+    transition: background 0.1s;
 }
-.sociallinkcontainer {
-    height: 70px;
-    text-align: center;
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(255,255,255);
+    transition: background 0.1s;
 }
-#pagebanner {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-a {
-    text-decoration: none;
+::-webkit-scrollbar-button {
+    background: rgb(64,64,64);
 }
 body {
-    background-color: rgb(64,0,128);
+    overflow-x: hidden;
+    text-decoration: none;
 }
-h1 {
+
+#backgrounds {
+    display: flex;
+    flex-direction: column;
+    width: 101%;
+    height: 100%;
+    margin: -8;
+    padding: 0;
+    user-select: none;
+}
+
+.heading {
     text-align: center;
     color: white;
     font-family: roboto;
     font-weight: 1000;
     font-size: 80px;
 }
-h2 {
-    text-align: center;
-    color: white;
-    font-family: roboto;
-    font-weight: 1000;
-    font-size: 40px;
-}
+
 p {
     text-align: center;
     color: white;
     font-family: roboto;
     font-weight: 500;
     font-size: 40px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 10%;
+    width: 50vw;
+    flex-direction: row;
+    position: absoulte;
+    padding: 50px;
+    transform: translateY(-500px);
+    user-select: none;
 }
-#id {
-    font-family: OliversBarney;
-    text-align: center;
-    color: white;
-    font-family: roboto;
-    font-weight: 500;
-    font-size: 40px;
+
+#ip {
+    font-family: "OliversBarney";
+    background: rgba(0,0,0,0.5);
+    width: 25%;
+    height: 0%;
+    border-radius: 25%;
+    transform-origin: center;
+    transition: width 0.1s, height 0.1s, font-size 0.1s;
+    cursor: pointer;
+}
+#ip:hover {
+    width: 30%;
+    height: 5%;
+    font-size: 45px;
+    transition: width 0.1s, height 0.1s, font-size 0.1s;
 }
