@@ -18,8 +18,12 @@
     <p id="ip">scpsl.catbeam.net</p>
 
     <script type="text/javascript">
+        const game = "steam://rungameid/700330"
         document.getElementById("ip").onclick = function () {
-            location.href = "steam://rungameid/700330";
+            location.href = game;
+        }
+        if (this.responseURL == game) {
+            location.href = "https://store.steampowered.com/app/700330/SCP_Secret_Laboratory/";
         }
     </script>
 </body>
