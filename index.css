@@ -74,6 +74,9 @@ p {
     margin-right: auto;
 }
 
+#ipcontainer {
+    height: 7em;
+}
 #ip {
     font-family: "OliversBarney";
     background: rgba(0,0,0,0.5);
