@@ -2,7 +2,18 @@
     font-family: "OliversBarney";
     src: url("fnt/OliversBarney.ttf");
 }
+@font-face {
+    font-family: Roboto;
+    src: url("fnt/Roboto.ttf");
+}
 
+body {
+    overflow-x: hidden;
+    text-decoration: none;
+
+    background-image: url(img/background.jpg);
+    background-size: cover;
+}
 ::selection {
     background: rgba(128,0,255,0.5);
 }
@@ -23,25 +34,31 @@
 ::-webkit-scrollbar-button {
     background: rgb(64,64,64);
 }
-body {
-    overflow-x: hidden;
-    text-decoration: none;
-}
 
-#backgrounds {
-    display: flex;
-    flex-direction: column;
-    width: 101%;
+/*
+#background {
+    background-image:
+        url(img/background1.jpg),
+        url(img/background2.jpg),
+        url(img/background3.jpg),
+        url(img/background4.jpg),
+        url(img/background5.jpg);
+    background-size: cover;
+
+    width: 100%;
     height: 100%;
-    margin: -8;
-    padding: 0;
-    user-select: none;
-}
+    left: 0;
+    top: 0;
+    position: absolute;
 
+    pointer-events: none;
+    z-index: -99;
+}
+*/
 .heading {
     text-align: center;
     color: white;
-    font-family: roboto;
+    font-family: Roboto;
     font-weight: 1000;
     font-size: 80px;
 }
@@ -49,37 +66,59 @@ body {
 p {
     text-align: center;
     color: white;
-    font-family: roboto;
+    font-family: Roboto;
     font-weight: 500;
     font-size: 40px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    height: 10%;
     width: 50vw;
-    flex-direction: row;
-    position: absoulte;
-    padding: 50px;
-    transform: translateY(-500px);
-    user-select: none;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #ip {
     font-family: "OliversBarney";
     background: rgba(0,0,0,0.5);
-    width: 25%;
-    height: 0%;
+    width: 16ex;
+    height: 1.5em;
     border-radius: 25%;
     transform-origin: center;
     transition: width 0.1s, height 0.1s, font-size 0.1s;
     cursor: pointer;
+	transform-origin: center;
 }
 #ip:hover {
-    width: 30%;
-    height: 5%;
-    font-size: 45px;
+    font-size: 55px;
     transition: width 0.1s, height 0.1s, font-size 0.1s;
+}
+
+.sociallink {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    display: inline-block;
+    transition: width 0.1s, height 0.1s;
+    padding: 20px;
+}
+.sociallink:hover {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    display: inline-block;
+    transition: width 0.1s, height 0.1s;
+}
+.sociallinkcontainer {
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    justify-content: center;
+}
+#discordwidget {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.9;
 }
