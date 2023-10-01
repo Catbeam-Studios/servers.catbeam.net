@@ -11,8 +11,8 @@ body {
     overflow-x: hidden;
     text-decoration: none;
 
-    background-image: url(img/background.jpg);
-    background-size: cover;
+    background-image: url(img/backgrounds/background.jpg);
+    background-size: contain;
 }
 ::selection {
     background: rgba(128,0,255,0.5);
@@ -24,37 +24,19 @@ body {
     background: rgb(0, 0, 0);
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(128,128,128);
+    background: rgba(255,255,255,128);
+
     transition: background 0.1s;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(255,255,255);
+    background: rgba(255,255,255,255);
+
     transition: background 0.1s;
 }
 ::-webkit-scrollbar-button {
     background: rgb(64,64,64);
 }
 
-/*
-#background {
-    background-image:
-        url(img/background1.jpg),
-        url(img/background2.jpg),
-        url(img/background3.jpg),
-        url(img/background4.jpg),
-        url(img/background5.jpg);
-    background-size: cover;
-
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-
-    pointer-events: none;
-    z-index: -99;
-}
-*/
 .heading {
     text-align: center;
     color: white;
@@ -79,18 +61,24 @@ p {
 }
 #ip {
     font-family: "OliversBarney";
-    background: rgba(0,0,0,0.5);
+    background: rgba(128,128,128,0.4);
+    box-shadow: 0 0 30px rgba(128,128,128,1);
+    color: rgba(128,128,128,1);
     width: 16ex;
     height: 1.5em;
     border-radius: 25%;
     transform-origin: center;
-    transition: width 0.1s, height 0.1s, font-size 0.1s;
     cursor: pointer;
 	transform-origin: center;
+    user-select: none;
+
+    transition: width 0.1s, height 0.1s, font-size 0.1s,  color 1s;
 }
 #ip:hover {
     font-size: 55px;
-    transition: width 0.1s, height 0.1s, font-size 0.1s;
+    color: rgba(255,255,255,1);
+
+    transition: width 0.1s, height 0.1s, font-size 0.1s, color 1s;
 }
 
 .sociallink {
@@ -98,14 +86,15 @@ p {
     height: 50px;
     overflow: hidden;
     display: inline-block;
-    transition: width 0.1s, height 0.1s;
     padding: 20px;
+    transition: width 0.1s, height 0.1s;
 }
 .sociallink:hover {
     width: 60px;
     height: 60px;
     overflow: hidden;
     display: inline-block;
+
     transition: width 0.1s, height 0.1s;
 }
 .sociallinkcontainer {
@@ -124,4 +113,20 @@ p {
     margin-right: auto;
     display: block;
     opacity: 0.9;
+    width: 50vw;
+    height: 50vh;
+}
+
+#gallery {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    justify-content: center;
+}
+.galimg {
+    width: 90vw;
 }
