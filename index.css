@@ -3,16 +3,47 @@
     src: url("fnt/OliversBarney.ttf");
 }
 @font-face {
+    font-family: "Minecraft";
+    src: url("fnt/Minecraft.otf");
+}
+@font-face {
     font-family: Roboto;
     src: url("fnt/Roboto.ttf");
 }
-
+html, body {
+    margin: 0;
+    padding: 0;
+}
 body {
     overflow-x: hidden;
     text-decoration: none;
+    background-color: rgb(0,0,0);
+}
+* {
+    box-sizing: border-box;
+}
+.bg {
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.5;
+    
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
 
-    background-image: url(img/backgrounds/background.jpg);
+    pointer-events: none;
+    z-index: -99;
+}
+#ctbmbg {
+    background-image: url(img/ctbm/background.jpg);
+}
+#scpslbg {
+    background-image: url(img/scpsl/backgrounds/background-full.jpg);
     background-size: contain;
+    height: 940%;
+    background-repeat: repeat;
 }
 ::selection {
     background: rgba(128,0,255,0.5);
@@ -37,15 +68,69 @@ body {
     background: rgb(64,64,64);
 }
 
+#indexdiv {
+    position: absolute;
+    margin-top: 50vh;
+    margin-bottom: 50vh;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+#indexheading {
+    font-size: 60px;
+    text-shadow: 0 0 20px rgb(255,255,255);
+}
+#SCPSLlink {
+    font-family: "OliversBarney";
+    color: rgba(128,128,128,1);
+    cursor: pointer;
+	transform-origin: center;
+    user-select: none;
+
+    transition: color 1s;
+}
+#SCPSLlink:hover {
+    color: rgba(255,255,255,1);
+
+    transition: color 1s;
+}
+#MClink {
+    font-family: "Minecraft";
+    color: rgba(0,128,32,1);
+    cursor: pointer;
+	transform-origin: center;
+    user-select: none;
+
+    transition: color 1s;
+}
+#MClink:hover {
+    color: rgb(0,255,64);
+
+    transition: color 1s;
+}
+
 .heading {
     text-align: center;
     color: white;
     font-family: Roboto;
     font-weight: 1000;
     font-size: 80px;
+    width: 100%;
 }
 
 p {
+    text-align: center;
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+a {
     text-align: center;
     color: white;
     font-family: Roboto;
