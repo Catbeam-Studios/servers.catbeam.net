@@ -202,7 +202,7 @@ a {
     height: 50vh;
 }
 
-#gallery {
+#galleryContainer {
     text-align: center;
     align-items: center;
     display: flex;
