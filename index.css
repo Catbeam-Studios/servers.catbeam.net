@@ -42,7 +42,7 @@ body {
 #scpslbg {
     background-image: url(img/scpsl/backgrounds/background-full.jpg);
     background-size: contain;
-    height: 940%;
+    height: 100%;
     background-repeat: repeat;
 }
 ::selection {
