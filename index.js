@@ -12,4 +12,4 @@ window.addEventListener("DOMContentLoaded", (event) => {
             location.href = (location.href + ".html")
         }
     }
-});
+})
