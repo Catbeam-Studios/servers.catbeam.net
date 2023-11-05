@@ -88,7 +88,6 @@ p, .a {
     height: 1.5em;
     transform-origin: center;
     cursor: pointer;
-	transform-origin: center;
     border: 0.1em;
     border-color: white;
     border-style: solid;

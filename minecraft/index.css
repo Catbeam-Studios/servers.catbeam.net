@@ -85,7 +85,6 @@ p, .a {
     width: 18ex;
     height: 1.5em;
     transform-origin: center;
-	transform-origin: center;
     border: 0.1em;
     border-color: var(--sec);
     border-style: solid;
