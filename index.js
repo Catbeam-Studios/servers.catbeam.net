@@ -1,15 +1,24 @@
 window.addEventListener("DOMContentLoaded", (event) => {
-    const game = "steam://rungameid/700330";
-    document.getElementById("ip").addEventListener("click", function() {
-        location.href = game;
+    $ (function() {
+        $ ("#naviframe").load("/navigation.html");
     })
-    if (this.responseURL == game) {
-        location.href = "https://store.steampowered.com/app/700330/SCP_Secret_Laboratory/";
-    }
 
+    $("body").prepend('<div id="topnavshadow"></div>')
+    $("body").prepend('<div id="naviframe"></div>')
+
+    window.addEventListener('load', function() {
+        if (document.getElementById("nav" + document.body.id) != null) {
+            document.getElementById("nav" + document.body.id).style.color = "white"
+        }
+    })
+    
     if (document.body.id == "404") {
         if (location.href.endsWith(".html") != true) {
             location.href = (location.href + ".html")
         }
     }
 })
+
+function openSCPSL() {
+    location.href = "steam://rungameid/700330"
+}

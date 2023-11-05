@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Roboto;
+    src: url("fnt/Roboto.ttf");
+}
+
+#naviframe {
+    background-color: var(--main-color);
+    height: 4em;
+    width: 100%;
+}
+#topnav div {
+    float: right;
+    color: var(--sec);
+    background-color: var(--main-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: unset;
+    text-align: unset;
+    font-family: Roboto;
+    transition: font-size 0.1s;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+#topnav a {
+    float: right;
+    color: var(--sec);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: unset;
+    text-align: unset;
+    font-family: Roboto;
+    transition: font-size 0.1s;
+}
+#topnav a:hover {
+    font-size: 30px;
+    transition: font-size 0.1s;
+}
+#topnav div a {
+    font-size: 25px;
+    transition: none;
+    z-index: 10;
+}
+#topnav div a:hover {
+    font-size: 25px;
+    transition: none;
+}
+#topnavshadow {
+    position: absolute;
+    top: 0;
+    background-color: rgba(0,0,0,0);
+    height: 4em;
+    width: 100%;
+    box-shadow: 0 10px 30px var(--main-color);
+    pointer-events: none;
+}

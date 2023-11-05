@@ -1,0 +1,33 @@
+#p404 {
+    font-size: 80px;
+    text-shadow: 0 0 20px rgb(255,255,255);
+}
+#div404 {
+    position: absolute;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+#button404 {
+    font-size: 30px;
+    width: 50ex;
+    height: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+
+    border: 5px;
+    border-color: var(--sec);
+    border-style: solid;
+    background-color: var(--pri);
+    color: var(--sec);
+    font-family: Roboto;
+
+    transition: font-size 0.1s;
+}
+#button404:hover {
+    font-size: 40px;
+
+    transition: font-size 0.1s;
+}

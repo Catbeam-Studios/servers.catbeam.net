@@ -10,6 +10,13 @@
     font-family: Roboto;
     src: url("fnt/Roboto.ttf");
 }
+:root {
+    --main-color: rgb(255,200,0);
+    --pri: rgba(255,200,0,0.7);
+    --main-color-bg: rgb(128,100,0);
+    --main-color-bg-trans: rgba(128,100,0,0.7);
+    --sec: rgba(128,0,255,1);
+}
 html, body {
     margin: 0;
     padding: 0;
@@ -17,33 +24,14 @@ html, body {
 body {
     overflow-x: hidden;
     text-decoration: none;
-    background-color: rgb(0,0,0);
+
+    background-position: center center;
+    background-image: url(/img/background.jpg);
+    background-size: contain;
+    background-repeat: repeat;
 }
 * {
     box-sizing: border-box;
-}
-.bg {
-    background-position: center center;
-    background-size: cover;
-    opacity: 0.5;
-    
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    position: absolute;
-
-    pointer-events: none;
-    z-index: -99;
-}
-#ctbmbg {
-    background-image: url(img/ctbm/background.jpg);
-}
-#scpslbg {
-    background-image: url(img/scpsl/backgrounds/background-full.jpg);
-    background-size: contain;
-    height: 100%;
-    background-repeat: repeat;
 }
 ::selection {
     background: rgba(128,0,255,0.5);
@@ -73,7 +61,6 @@ body {
     margin-top: 50vh;
     margin-bottom: 50vh;
     width: 100vw;
-    height: 100vh;
 
     display: flex;
     flex-direction: column;
@@ -82,33 +69,31 @@ body {
     font-size: 60px;
     text-shadow: 0 0 20px rgb(255,255,255);
 }
-#SCPSLlink {
-    font-family: "OliversBarney";
-    color: rgba(128,128,128,1);
+.serverlink {
     cursor: pointer;
 	transform-origin: center;
     user-select: none;
+    padding-block-end: 20px;
 
-    transition: color 1s;
+    transition: color 0.5s, text-shadow 0.5s;
+}
+#SCPSLlink {
+    font-family: "OliversBarney";
+    color: rgba(128,0,0,1);
+    text-shadow: 0 0 10px rgba(100,0,0,1);
 }
 #SCPSLlink:hover {
-    color: rgba(255,255,255,1);
-
-    transition: color 1s;
+    color: rgba(255,0,0,1);
+    text-shadow: 0 0 20px rgba(255,0,0,1);
 }
 #MClink {
     font-family: "Minecraft";
     color: rgba(0,128,32,1);
-    cursor: pointer;
-	transform-origin: center;
-    user-select: none;
-
-    transition: color 1s;
+    text-shadow: 0 0 20px rgba(0,64,16,1);
 }
 #MClink:hover {
     color: rgb(0,255,64);
-
-    transition: color 1s;
+    text-shadow: 0 0 20px rgba(0,255,64,1);
 }
 
 .heading {
@@ -126,7 +111,6 @@ p {
     font-family: Roboto;
     font-weight: 500;
     font-size: 40px;
-    width: 50vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -136,35 +120,8 @@ a {
     font-family: Roboto;
     font-weight: 500;
     font-size: 40px;
-    width: 50vw;
     margin-left: auto;
     margin-right: auto;
-}
-
-#ipcontainer {
-    height: 7em;
-}
-#ip {
-    font-family: "OliversBarney";
-    background: rgba(128,128,128,0.4);
-    box-shadow: 0 0 20px white;
-    color: rgba(128,128,128,1);
-    width: 16ex;
-    height: 1.5em;
-    transform-origin: center;
-    cursor: pointer;
-	transform-origin: center;
-    border: 0.1em;
-    border-color: white;
-    border-style: solid;
-
-    transition: width 0.1s, height 0.1s, font-size 0.1s,  color 1s;
-}
-#ip:hover {
-    font-size: 55px;
-    color: rgba(255,255,255,1);
-
-    transition: width 0.1s, height 0.1s, font-size 0.1s, color 1s;
 }
 
 .sociallink {
@@ -193,26 +150,4 @@ a {
     margin-right: auto;
     vertical-align: middle;
     justify-content: center;
-}
-#discordwidget {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    opacity: 0.9;
-    width: 50vw;
-    height: 50vh;
-}
-
-#galleryContainer {
-    text-align: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    vertical-align: middle;
-    justify-content: center;
-}
-.galimg {
-    width: 90vw;
 }

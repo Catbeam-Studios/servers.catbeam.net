@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "OliversBarney";
+    src: url("/fnt/OliversBarney.ttf");
+}
+@font-face {
+    font-family: "Minecraft";
+    src: url("fnt/Minecraft.otf");
+}
+@font-face {
+    font-family: Roboto;
+    src: url("/fnt/Roboto.ttf");
+}
+:root {
+    --main-color: rgba(0,255,64,1);
+    --pri: rgba(0,255,64,0.7);
+    --sec: rgba(0,128,32,1);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+    text-decoration: none;
+
+    background-position: center center;
+    background-image: url(img/backgrounds/background.png);
+    background-size: 50px 50px;
+    background-repeat: repeat;
+}
+* {
+    box-sizing: border-box;
+}
+::selection {
+    background: rgba(128,0,255,0.5);
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(50,30,10,1);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0,128,32,1);
+
+    transition: background 0.1s;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,64,16,1);
+
+    transition: background 0.1s;
+}
+::-webkit-scrollbar-button {
+    background: rgba(25,15,5,1);
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    font-family: Roboto;
+    font-weight: 1000;
+    font-size: 80px;
+}
+
+p, .a {
+    text-align: center;
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: block;
+}
+
+#ipcontainer {
+    height: 7em;
+}
+#ip {
+    font-family: "Minecraft";
+    background: var(--pri);
+    box-shadow: 0 0 20px white;
+    color: rgba(200,200,200,1);
+    width: 18ex;
+    height: 1.5em;
+    transform-origin: center;
+    cursor: pointer;
+	transform-origin: center;
+    border: 0.1em;
+    border-color: var(--sec);
+    border-style: solid;
+
+    transition: width 0.1s, height 0.1s, font-size 0.1s,  color 1s;
+}
+#ip:hover {
+    font-size: 55px;
+    color: rgba(255,255,255,1);
+
+    transition: width 0.1s, height 0.1s, font-size 0.1s, color 1s;
+}
+
+.sociallink {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: inline-block;
+    padding: 20px;
+    transition: width 0.1s, height 0.1s;
+}
+.sociallink:hover {
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    display: inline-block;
+
+    transition: width 0.1s, height 0.1s;
+}
+.sociallinkcontainer {
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    justify-content: center;
+}
+#discordwidget {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.9;
+    width: 50vw;
+    height: 50vh;
+}
+
+#galleryContainer {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    justify-content: center;
+}
+.galimg {
+    width: 90vw;
+}

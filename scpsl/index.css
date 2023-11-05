@@ -1,0 +1,153 @@
+@font-face {
+    font-family: "OliversBarney";
+    src: url("/fnt/OliversBarney.ttf");
+}
+@font-face {
+    font-family: "Minecraft";
+    src: url("/fnt/Minecraft.otf");
+}
+@font-face {
+    font-family: Roboto;
+    src: url("/fnt/Roboto.ttf");
+}
+:root {
+    --main-color: rgba(128,128,128,1);
+    --pri: rgba(128,128,128,0.4);
+    --sec: rgba(255,255,255,1);
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden;
+    text-decoration: none;
+
+    background-position: center center;
+    background-image: url(img/backgrounds/background-full.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+}
+* {
+    box-sizing: border-box;
+}
+::selection {
+    background: rgba(128,0,255,0.5);
+}
+::-webkit-scrollbar {
+    width: 20px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,128);
+
+    transition: background 0.1s;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,255);
+
+    transition: background 0.1s;
+}
+::-webkit-scrollbar-button {
+    background: rgb(64,64,64);
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    font-family: Roboto;
+    font-weight: 1000;
+    font-size: 80px;
+    width: 100%;
+}
+
+p, .a {
+    text-align: center;
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: block;
+}
+
+#ipcontainer {
+    height: 7em;
+}
+#ip {
+    font-family: "OliversBarney";
+    background: rgba(128,128,128,0.4);
+    box-shadow: 0 0 20px white;
+    color: rgba(128,128,128,1);
+    width: 16ex;
+    height: 1.5em;
+    transform-origin: center;
+    cursor: pointer;
+	transform-origin: center;
+    border: 0.1em;
+    border-color: white;
+    border-style: solid;
+
+    transition: width 0.1s, height 0.1s, font-size 0.1s,  color 1s;
+}
+#ip:hover {
+    font-size: 55px;
+    color: rgba(255,255,255,1);
+
+    transition: width 0.1s, height 0.1s, font-size 0.1s, color 1s;
+}
+
+.sociallink {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: inline-block;
+    padding: 20px;
+    transition: width 0.1s, height 0.1s;
+}
+.sociallink:hover {
+    width: 110px;
+    height: 110px;
+    overflow: hidden;
+    display: inline-block;
+
+    transition: width 0.1s, height 0.1s;
+}
+.sociallinkcontainer {
+    height: 70px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    justify-content: center;
+}
+#discordwidget {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    opacity: 0.9;
+    width: 50vw;
+    height: 50vh;
+}
+
+#galleryContainer {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    justify-content: center;
+}
+.galimg {
+    width: 90vw;
+}
