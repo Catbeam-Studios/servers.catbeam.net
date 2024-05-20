@@ -12,6 +12,7 @@
 }
 :root {
     --main-color: rgba(128,128,128,1);
+    --main-font: "Olivers Barney";
     --pri: rgba(128,128,128,0.4);
     --sec: rgba(255,255,255,1);
 }
@@ -136,14 +137,11 @@ p, .a {
 }
 
 #galleryContainer {
-    text-align: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    vertical-align: middle;
-    justify-content: center;
 }
 .galimg {
     width: 90vw;

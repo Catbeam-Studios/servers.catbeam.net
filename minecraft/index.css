@@ -12,6 +12,7 @@
 }
 :root {
     --main-color: rgba(0,255,64,1);
+    --main-font: "Minecraft";
     --pri: rgba(0,255,64,0.7);
     --sec: rgba(0,128,32,1);
 }
@@ -135,14 +136,11 @@ p, .a {
 }
 
 #galleryContainer {
-    text-align: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    vertical-align: middle;
-    justify-content: center;
 }
 .galimg {
     width: 90vw;
