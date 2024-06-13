@@ -25,6 +25,10 @@
 html, body {
     margin: 0;
     padding: 0;
+    background-image: url(/img/background.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100%;
 }
 body {
     overflow-x: hidden;
@@ -32,18 +36,6 @@ body {
 }
 * {
     box-sizing: border-box;
-}
-.bg {
-    background-position: center center;
-    background-repeat: repeat;
-    width: 100vw;
-    height: calc(100vh - 4em);
-    background-size: 100%;
-    position: absolute;
-    z-index: -1;
-}
-#ctbmbg {
-    background-image: url(/img/background.jpg);
 }
 
 ::selection {
@@ -70,7 +62,6 @@ body {
 }
 
 #indexdiv {
-    position: absolute;
     margin-top: 20%;
     width: 100vw;
 
@@ -81,7 +72,7 @@ body {
     font-size: 60px;
     text-shadow: 0 0 20px rgb(255,255,255);
 }
-.serverlink {
+.link {
     cursor: pointer;
 	transform-origin: center;
     user-select: none;
