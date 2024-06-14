@@ -1,12 +1,15 @@
+@font-face {
+    font-family: Roboto;
+    src: url("/fnt/Roboto.ttf");
+}
 :root {
     --main-color: linear-gradient(to right, #4D7A41, #C4151C);
     --box-shadow: #8a482f;
-    --main-font: Arial;
+    --main-font: Roboto;
     --pri: #4D7A41;
     --sec: #ffffff;
 }
 * {
-    font-family: "Roboto Medium";
     color: white;
 }
 html, body {
