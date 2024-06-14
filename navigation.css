@@ -1,12 +1,12 @@
 #naviframe {
-    background-color: var(--main-color);
+    background: var(--main-color);
     height: 4em;
     width: 100%;
 }
 #topnav div {
     float: right;
     color: var(--sec);
-    background-color: var(--main-color);
+    background: var(--main-color);
     text-align: center;
     text-decoration: none;
     font-size: 25px;
@@ -49,6 +49,6 @@
     background-color: rgba(0,0,0,0);
     height: 4em;
     width: 100%;
-    box-shadow: 0 10px 30px var(--main-color);
+    box-shadow: 0 10px 30px var(--box-shadow);
     pointer-events: none;
 }

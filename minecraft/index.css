@@ -12,6 +12,7 @@
 }
 :root {
     --main-color: rgba(0,255,64,1);
+    --box-shadow: rgba(0,255,64,1);
     --main-font: "Minecraft";
     --pri: rgba(0,255,64,0.7);
     --sec: rgba(0,128,32,1);

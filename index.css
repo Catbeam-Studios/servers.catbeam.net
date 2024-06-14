@@ -25,14 +25,15 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-image: url(/img/background.jpg);
-    background-position: center center;
-    background-repeat: repeat;
-    background-size: 100%;
 }
 body {
     overflow-x: hidden;
     text-decoration: none;
+
+    background-image: url(/img/background.jpg);
+    background-position: center center;
+    background-repeat: repeat;
+    background-size: 100%;
 }
 * {
     box-sizing: border-box;
@@ -106,6 +107,15 @@ body {
 #MClink:hover {
     color: rgba(0,255,64,1);
     text-shadow: 0 0 20px rgba(0,255,64,1);
+}
+#DODSlink {
+    font-family: Arial;
+    color: #C4151C;
+    text-shadow: 0 0 20px #C4151C;
+}
+#DODSlink:hover {
+    color: #4D7A41;
+    text-shadow: 0 0 20px #4D7A41;
 }
 
 .heading {

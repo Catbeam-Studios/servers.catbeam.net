@@ -1,4 +1,8 @@
 @font-face {
+    font-family: "DIN 2014 Demi";
+    src: url("/fnt/DIN2014Demi.otf");
+}
+@font-face {
     font-family: "OliversBarney";
     src: url("/fnt/OliversBarney.ttf");
 }
@@ -11,11 +15,11 @@
     src: url("/fnt/Roboto.ttf");
 }
 :root {
-    --main-color: rgba(128,128,128,1);
-    --box-shadow: rgba(128,128,128,1);
-    --main-font: "OliversBarney";
-    --pri: rgba(128,128,128,0.4);
-    --sec: rgba(255,255,255,1);
+    --main-color: linear-gradient(to right, #4D7A41, #C4151C);
+    --box-shadow: #8a482f;
+    --main-font: Arial;
+    --pri: #4D7A41;
+    --sec: #ffffff;
 }
 html, body {
     margin: 0;
@@ -25,14 +29,24 @@ body {
     overflow-x: hidden;
     text-decoration: none;
 
+    background-image: url(img/Background.png);
     background-position: center center;
-    background-image: url(img/backgrounds/background-full.jpg);
-    background-size: contain;
     background-repeat: repeat;
+    background-size: cover;
+
+    font-family: var(--main-font);
 }
 * {
     box-sizing: border-box;
 }
+#logo {
+    width: 512px;
+    height: 128px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 ::selection {
     background: rgba(128,0,255,0.5);
 }
@@ -59,7 +73,6 @@ body {
 .heading {
     text-align: center;
     color: white;
-    font-family: Roboto;
     font-weight: 1000;
     font-size: 80px;
 }
@@ -67,7 +80,6 @@ body {
 p, .a {
     text-align: center;
     color: white;
-    font-family: Roboto;
     font-weight: 500;
     font-size: 40px;
     margin-left: auto;
@@ -80,7 +92,6 @@ p, .a {
     height: 7em;
 }
 #ip {
-    font-family: "OliversBarney";
     background: rgba(128,128,128,0.4);
     box-shadow: 0 0 20px white;
     color: rgba(128,128,128,1);
@@ -119,14 +130,11 @@ p, .a {
 }
 .sociallinkcontainer {
     height: 70px;
-    text-align: center;
     align-items: center;
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-    vertical-align: middle;
-    justify-content: center;
 }
 #discordwidget {
     margin-left: auto;
@@ -137,6 +145,9 @@ p, .a {
     height: 50vh;
 }
 
+#gallery {
+    margin-bottom: 100px;
+}
 #galleryContainer {
     align-items: center;
     display: flex;

@@ -16,6 +16,7 @@
 }
 :root {
     --main-color: rgba(128,0,0,1);
+    --box-shadow: rgba(128,0,0,1);
     --main-font: "DIN 2014 Demi";
     --pri: rgba(128,0,0,0.4);
     --sec: rgba(255,255,255,1);
@@ -28,9 +29,9 @@ body {
     overflow-x: hidden;
     text-decoration: none;
 
-    background-position: center center;
     background-image: url(img/Background.png);
-    background-size:cover
+    background-position: center center;
+    background-repeat: repeat;
 }
 * {
     box-sizing: border-box;
